@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Hind:400,600|Roboto:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Zadanie rekrutacyjne</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="header">
+            <h2 class="title">Obszary naszych kompetencji</h2>
+            <p class="subtitle">Pomagamy uczyć się na błędach innych. Wspieramy i rekomendujemy wartościowe rozwiązania
+                biznesowe.</p>
+        </section>
+        <div class="slider-container">
+            <div id="sprocket-container">
+                <img id="sprocket" src="/img/sprocket.png" alt="">
+                <p class="sprocket-text">poznaj nasze kompetencje</p>
+                <a href="#" class="subpage">
+                    <div class="inner-subpage center ">
+
+                        <img class="subpage-img center-up" src="/img/zarzadzanie.png" alt="">
+                        <div>Zarządzanie projektami</div>
+                    </div>
+                </a>
+                <a href="#" class="subpage">
+                    <div class="inner-subpage text-position">
+
+                        <img class="subpage-img" src="/img/dotacje.png" alt="">
+                        <div>Dotacje i granty międzynarodowe</div>
+                    </div>
+                </a>
+                <a href="#" class="subpage">
+                    <div class="inner-subpage text-position">
+
+                        <img class="subpage-img" src="/img/ksiegowosc.png" alt="">
+                        <div>Międzynarodowa księgowość, kadry i podatki</div>
+                    </div>
+                </a>
+                <a href="#" class="subpage">
+                    <div class="inner-subpage text-position">
+
+                        <img class="subpage-img" src="/img/prawo.png" alt="">
+                        <div>Prawo międzynarodowe</div>
+                    </div>
+                </a>
+                <a href="#" class="subpage">
+                    <div class="inner-subpage text-position">
+                        <img class="subpage-img" src="/img/finansowanie.png" alt="">
+                        <div>Finansowanie handlu międzynarodowego</div>
+                    </div>
+                </a>
+                <a href="#" class="subpage">
+                    <div class="inner-subpage text-position">
+
+                        <img class="subpage-img" src="/img/pozyskiwanie.png" alt="">
+                        <div>Pozyskiwanie inwestorów (M&A)</div>
+                    </div>
+                </a>
+                <a href="#" class="subpage">
+                    <div class="inner-subpage center">
+                        <img class="subpage-img" src="/img/nieruchomosci.png" alt="">
+                        <div>Nieruchomości</div>
+                    </div>
+                </a>
+                <a href="#" class="subpage">
+                    <div class="inner-subpage text-left text-position">
+
+                        <img class="subpage-img" src="/img/komercjalizacja.png" alt="">
+                        <div>Komercjalizacja własności intelektualnej</div>
+                    </div>
+                </a>
+                <a href="#" class="subpage ">
+                    <div class="inner-subpage text-left text-position">
+
+                        <img class="subpage-img" src="/img/produktywnosc.png" alt="">
+                        <div>Podnoszenie produktywności</div>
+                    </div>
+                </a>
+                <a href="#" class="subpage ">
+                    <div class="inner-subpage text-left text-position">
+
+                        <img class="subpage-img" src="/img/crowdfunding.png" alt="">
+                        <div>Crowdfunding</div>
+                    </div>
+                </a>
+                <a href="#" class="subpage ">
+                    <div class="inner-subpage text-left text-position">
+
+                        <img class="subpage-img" src="/img/ubezpieczenia.png" alt="">
+                        <div>Ubezpieczenia międzynarodowe</div>
+                    </div>
+                </a>
+                <a href="#" class="subpage">
+                    <div class="inner-subpage text-left text-position">
+
+                        <img class="subpage-img" src="/img/marketing.png" alt="">
+                        <div>Marketing 360º</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <h2>Skontaktuj się z nami</h2>
+                <p>Zadzwoń <span>+48 535 015 835 </span>lub wypełnij formularz.</p>
+                <form id="form">
+                    <div class="fieldset">
+                        <input placeholder="Imię i nazwisko" type="text">
+                        <input placeholder="Telefon" type="text">
+                        <input placeholder="E-mail" type="text">
+                    </div>
+                    <div class="fieldset">
+                        <input placeholder="Firma" type="text">
+                        <select class="custom-select" name="employees">
+                            <option value="" disabled selected hidden>Ilość pracowników</option>
+
+                        </select>
+                        <select class="custom-select" name="income">
+                            <option value="" disabled selected hidden>Roczny dochód firmy</option>
+
+                        </select>
+
+                    </div>
+                    <textarea placeholder="Wiadomość" name="message" cols="30" rows="10"></textarea>
+
+                    <div class="form-center">
+                        <input type="checkbox" name="" id="checkbox">
+                        <span class="checkbox-text">Zapozanałem(-łam) się z <a href="">Polityką prywatności</a> oraz z
+                            <a href="">Zastrzeżeniami prawnymi</a>.</span></div>
+
+
+                </form>
+                <div class="btn-wrapper">
+                    <div class="btn">Wyślij</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        let sprocket = document.getElementById("sprocket");
+        let innerSubpage = document.querySelectorAll('.inner-subpage');
+        let radius = sprocket.clientHeight / 2;
+
+        let start = -90;
+        let subpage = document.querySelectorAll(".subpage");
+        let slice = 360 / subpage.length;
+        for (let i = 0; i < subpage.length; i++) {
+            let rotate = slice * i + start;
+
+            subpage[i].style.transform = "rotate(" + rotate + "deg) translate(" + radius + "px)";
+            let rotateReverse = rotate * (-1);
+            innerSubpage[i].style.transform = "rotate(" + rotateReverse + "deg)";
+        }
+
+        let divs = document.querySelectorAll(".text-left > div");
+
+        for (let i = 0; i < divs.length; i++) {
+            let width = divs[i].clientWidth;
+
+            if (width < 120) {
+                width *= 2;
+            }
+            else { width *= 1.5; }
+
+
+            divs[i].style.transform = "translate(" + (-width) + "px)";
+
+
+        }
+
+    </script>
+</body>
+
+</html>

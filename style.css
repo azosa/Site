@@ -1,0 +1,356 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-auto-columns: 1fr;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 4% 3% 10%;
+}
+
+.title {
+    font: 600 36px / 1.6em 'Hind', sans-serif;
+    margin: 0 auto;
+    color: #2f2f2f;
+}
+
+.subtitle {
+    margin: 0 auto;
+    font: 400 16px / 1.3em 'Roboto', sans-serif;
+    color: #565e66;
+}
+
+#sprocket-container {
+    max-width: 30%;
+    text-align: center;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#sprocket {
+    max-width: 469px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.sprocket-text {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 46%;
+    left: 29%;
+    padding: 10px;
+}
+
+.subpage {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    text-decoration: none;
+}
+
+.inner-subpage>div {
+    white-space: nowrap;
+    color: #2f2f2f;
+    font-family: "Hind - Semi Bold";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 33px;
+}
+
+.subpage-img {
+    width: 70px;
+    height: 70px;
+    box-sizing: border-box;
+    border: 3px solid #d4dbe0;
+    background-color: #f4f7f9;
+    border-radius: 50%;
+    padding: 1em;
+    margin: 1em;
+}
+
+.text-position {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+}
+
+.center-up+div {
+    transform: translateY(-400%);
+}
+
+.text-left>div {
+    position: relative;
+}
+
+footer {
+    margin-top: 10%;
+    padding: 4% 0;
+    background-color: #274291;
+    background-image: url("/img/footer.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+}
+
+.footer {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.footer>h2 {
+    color: #ffffff;
+    font-family: "Hind", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 31.07px;
+    text-align: center;
+}
+
+.footer>p {
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin: 1.2em;
+}
+
+.footer>p>span {
+    font-weight: 700;
+}
+
+input, select {
+    box-sizing: content-box;
+    width: 27%;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    background-color: #ffffff;
+    color: #565e66;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 1em;
+}
+
+textarea {
+    box-sizing: content-box;
+    margin: 1em 0;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    background-color: #ffffff;
+    color: #565e66;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 1em;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+.fieldset {
+    display: flex;
+    flex-direction: row;
+    margin: 1em 0;
+    justify-content: space-between;
+}
+
+.form-center {
+    box-sizing: content-box;
+    margin: 0 auto;
+}
+
+.custom-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background-image: url('/img/arrow.png');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 95%;
+    background-size: auto;
+}
+
+#checkbox {
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    border: 1px solid #dbdbdb;
+    background-color: #ffffff;
+}
+
+.checkbox-text {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #ffffff;
+}
+
+.checkbox-text a {
+    color: #35a8e0;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.btn-wrapper {
+    text-align: center;
+    margin-top: 1.3em;
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #35a8e0;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding: 1em 3em;
+}
+
+@media screen and (max-width: 900px) {
+    .subpage-img {
+        width: 25px;
+        height: 25px;
+        border: 1px solid #d4dbe0;
+        padding: .3em;
+        margin: .3em;
+    }
+    .footer {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .sprocket-text {
+        font-size: .4em;
+        font-weight: 400;
+        line-height: 9px;
+        top: 45%;
+        left: 29%;
+    }
+    .fieldset {
+        flex-direction: column;
+    }
+    input, select {
+        width: 95%;
+        margin-top: 1em;
+    }
+    .subpage {
+        position: absolute;
+        top: 43%;
+        left: 44%;
+    }
+    .inner-subpage>div {
+        white-space: wrap;
+        font-size: .6em;
+    }
+    .header {
+        margin-bottom: 5%;
+    }
+    .center-up+div {
+        transform: translateY(-200%);
+    }
+    footer {
+        margin-top: 15%;
+        padding: 10% 0;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .subpage-img {
+        width: 25px;
+        height: 25px;
+        border: 1px solid #d4dbe0;
+        padding: .3em;
+        margin: .3em;
+    }
+    .footer {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .sprocket-text {
+        font-size: .4em;
+        font-weight: 400;
+        line-height: 9px;
+        top: 43%;
+        left: 22%;
+    }
+    .fieldset {
+        flex-direction: column;
+    }
+    input, select {
+        width: 90%;
+        margin-top: 1em;
+    }
+    .subpage {
+        position: absolute;
+        top: 43%;
+        left: 37%;
+    }
+    .inner-subpage>div {
+        white-space: wrap;
+        font-size: .6em;
+    }
+    .header {
+        margin-bottom: 5%;
+    }
+    .center-up+div {
+        transform: translateY(-200%);
+    }
+    footer {
+        margin-top: 10%;
+        padding: 8% 0;
+    }
+    .slider-container {
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    #sprocket-container {
+        top: 0px;
+        left: 35%;
+        height: auto;
+        padding: 20% 0;
+    }
+    .title {
+        font: 600 30px / 1.3em 'Hind', sans-serif;
+    }
+    .subtitle {
+        font: 400 14px / 1.1em 'Roboto', sans-serif;
+    }
+}
